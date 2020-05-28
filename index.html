@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Welcome to iFrame test page</h1>
+<div id="test">
+</div>
+<div>
+<iframe src='./iframe4/iframe4.html' width='100%' height='250' style='border:none; overflow:hidden' scrolling='no'>
+</iframe>
+</div>
+<script type="text/javascript">
+let iFrameCount = 3;
+for(let i = 0; i < iFrameCount; i++) {
+document.getElementById("test").innerHTML += 
+"<div>" +
+"<iFrame src='./iframe" + (i+1)+"/iframe" + (i+1) +".html' width='100%' height='250' style='border:none; overflow:hidden' scrolling='no'>" +
+"</iFrame>" +
+"</div>";
+};
+</script>
+</body>
+</html>
